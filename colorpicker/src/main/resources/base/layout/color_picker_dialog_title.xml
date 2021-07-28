@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:background_element="$graphic:background_dialog"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:dialog_title"
+        ohos:text_size="30fp"
+        ohos:background_element="$graphic:background_dialog"
+        ohos:text_color="#00FFFF"
+        ohos:text_alignment="left"
+        ohos:height="match_content"
+        ohos:width="match_parent"/>
+
+</DirectionalLayout>

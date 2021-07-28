@@ -1,0 +1,20 @@
+{
+  "float": [
+    {
+      "name": "color_swatch_large",
+      "value": "200"
+    },
+    {
+      "name": "color_swatch_small",
+      "value": "154"
+    },
+    {
+      "name": "color_swatch_margins_large",
+      "value": "25"
+    },
+    {
+      "name": "color_swatch_margins_small",
+      "value": "12"
+    }
+  ]
+}

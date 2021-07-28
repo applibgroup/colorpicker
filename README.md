@@ -1,55 +1,27 @@
-ColorPicker is now opensource: https://android.googlesource.com/platform/frameworks/opt/colorpicker/
+# ColorPicker
+HarmonyOS library that allow us to pick a color from a palette.
 
-ColorPicker
-==================
+# Source
+This library is inspired by [ColorPicker](https://github.com/flavienlaurent/colorpicker) library.
 
-ColorPicker is a library which contains the beautiful ColorPicker that can be seen in the new Google Agenda app.
+# Features
+This library allows us to select a color from the palette. We can also add different colors to the palette.
 
-This library uses as much as possible the original picker contained in the new Google Agenda app.
+# Dependency
+1. For using ExpandableRecyclerView module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/colorpicker.har.
+``` java
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
+    testImplementation 'junit:junit:4.13'
+    implementation project(':colorpicker')
+}
+```
+2. For using ExpandableRecyclerView in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
+``` java
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.har'])
+	testImplementation 'junit:junit:4.13'
+}
+```
 
-![Example Image][1]
-
-Try out the sample APK [here][2]
-
-Or browse the [source code of the sample application][3] for a complete example of use.
-
-Including in your project
--------------------------
-
-Just add the library to your application as a library project.
-
-Usage
----------
-
-Using the library is simple, just look at the source code of the provided sample [here][4]
-
-
-Acknowledgements
---------------------
-
-* Thanks to Google for this beautiful picker
-
-License
------------
-
-    Copyright 2013 Flavien Laurent
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-	
-	
-	
-
- [1]: https://raw.github.com/biboune/colorpicker/master/graphics/img1.png
- [2]: https://raw.github.com/biboune/colorpicker/master/colorpicker-sample.apk
- [3]: https://github.com/biboune/colorpicker/tree/master/colorpicker-sample
- [4]: https://github.com/biboune/colorpicker/blob/master/colorpicker-sample/src/com/fourmob/colorpicker/sample/MainActivity.java
+# Usage
