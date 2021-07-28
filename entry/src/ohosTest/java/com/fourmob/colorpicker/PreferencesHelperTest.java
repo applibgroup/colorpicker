@@ -24,12 +24,11 @@ import com.fourmob.colorpicker.util.PreferencesHelper;
 import org.junit.Test;
 
 public class PreferencesHelperTest {
-    private Context context;
-    private PreferencesHelper helper;
-
     private final static String PREF_NAME = "Test";
     private final static String KEY_VALUE = "check";
     private final static RgbColor color = RgbPalette.YELLOW;
+    private Context context;
+    private PreferencesHelper helper;
 
     @Test
     public void testgetPositiveInt() {

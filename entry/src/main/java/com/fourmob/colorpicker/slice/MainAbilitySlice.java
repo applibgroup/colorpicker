@@ -44,7 +44,6 @@ public class MainAbilitySlice extends AbilitySlice {
                 .setText("selectedColor : " + color.asArgbInt()).show());
         Button showbtn = (Button) findComponentById(ResourceTable.Id_button);
         showbtn.setClickedListener(component -> colorPickerDialog.show());
-
     }
 
     @Override

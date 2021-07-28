@@ -18,14 +18,15 @@ import java.io.IOException;
  *  Class for creating a color picker palette.
  */
 public class ColorPickerPalette extends TableLayout {
+    private static final String TAG = "ColorPickerPalette";
+    public static final int LARGE_SWATCH = 1;
+    public static final int SMALL_SWATCH = 2;
     private String mDescription;
     private String mDescriptionSelected;
     private int mMarginSize;
     private int mNumColumns;
     private ColorPickerSwatch.OnColorSelectedListener mOnColorSelectedListener;
     private int mSwatchLength;
-    public static final int LARGE_SWATCH = 1;
-    public static final int SMALL_SWATCH = 2;
 
     public ColorPickerPalette(Context context) {
         super(context);
@@ -109,8 +110,8 @@ public class ColorPickerPalette extends TableLayout {
         for (RgbColor color : colors) {
             tableElements++;
             Component colorSwatch = createColorSwatch(color, selectedColor);
-            setSwatchDescription(rowNumber, tableElements, rowElements, color == selectedColor,
-                    colorSwatch);
+            setSwatchDescription(rowNumber, tableElements, rowElements,
+                    color.asArgbInt() == selectedColor.asArgbInt(), colorSwatch);
             addSwatchToRow(row, colorSwatch, rowNumber);
 
             rowElements++;
@@ -156,7 +157,7 @@ public class ColorPickerPalette extends TableLayout {
             this.mDescriptionSelected = resources.getElement(ResourceTable.String_color_swatch_description_selected)
                     .getString();
         } catch (NotExistException | WrongTypeException | IOException e) {
-            LogUtil.error("ColorPickerPalette init", "NotExistException | WrongTypeException | IOException");
+            LogUtil.error(TAG, "NotExistException | WrongTypeException | IOException");
         }
     }
 }

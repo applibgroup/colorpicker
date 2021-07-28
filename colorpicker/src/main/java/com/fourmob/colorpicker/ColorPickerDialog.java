@@ -18,17 +18,19 @@ import java.io.IOException;
  * Class for creating a Color Picker Dialog.
  */
 public class ColorPickerDialog extends CommonDialog implements ColorPickerSwatch.OnColorSelectedListener {
+    private static final String KEY_VALUE = "selectedColorValue";
+    private static final String PREF_NAME = "SelectedColorData";
+    private static final String TAG = "ColorPickerDialog";
     protected RgbColor[] mColors = null;
     protected int mColumns;
-    protected ColorPickerSwatch.OnColorSelectedListener mListener;
-    private ColorPickerPalette mPalette;
-    private ProgressBar mProgress;
     protected RgbColor mSelectedColor;
     protected int mSize;
+    protected ColorPickerSwatch.OnColorSelectedListener mListener;
+    protected int mTitleResId = ResourceTable.String_color_picker_default_title;
+    private ColorPickerPalette mPalette;
+    private ProgressBar mProgress;
     private PreferencesHelper preferencesHelper;
     private final Context mContext;
-    protected int mTitleResId = ResourceTable.String_color_picker_default_title;
-    private static final String KEY_VALUE = "selectedColorValue";
 
     public ColorPickerDialog(Context context) {
         super(context);
@@ -58,7 +60,7 @@ public class ColorPickerDialog extends CommonDialog implements ColorPickerSwatch
         this.mSize = size;
         setColors(colors, selectedColor);
         preferencesHelper = PreferencesHelper.getInstance();
-        preferencesHelper.init(mContext, "SelectedColorData", mSelectedColor);
+        preferencesHelper.init(mContext, PREF_NAME, mSelectedColor);
     }
 
     /**
@@ -94,7 +96,7 @@ public class ColorPickerDialog extends CommonDialog implements ColorPickerSwatch
             title.setText(mContext.getResourceManager().getElement(mTitleResId).getString());
             setTitleCustomComponent(titleComponent);
         } catch (NotExistException | WrongTypeException | IOException e) {
-            LogUtil.error("ColorPickerDialog onCreate", "NotExistException | WrongTypeException | IOException");
+            LogUtil.error(TAG, "NotExistException | WrongTypeException | IOException");
         }
         if (this.mColors != null) {
             showPaletteView();
