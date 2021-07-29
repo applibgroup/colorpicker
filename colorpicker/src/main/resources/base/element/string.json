@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "colorpicker"
+    },
+    {
+      "name": "color_picker_default_title",
+      "value": " Select a Color"
+    },
+    {
+      "name": "color_swatch_description",
+      "value": "Color %1$d"
+    },
+    {
+      "name": "color_swatch_description_selected",
+      "value": "Color %1$d selected"
+    }
+  ]
+}

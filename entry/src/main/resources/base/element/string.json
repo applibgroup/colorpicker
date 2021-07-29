@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": " Test"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "   Hello World!"
+    },
+    {
+      "name": "dialog_title",
+      "value": "   pick a color"
+    },
+    {
+      "name": "button_text",
+      "value": "Button"
+    }
+  ]
+}
