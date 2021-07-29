@@ -13,6 +13,7 @@ This library is inspired by [ColorPicker](https://github.com/flavienlaurent/colo
 * This library allows user to select a color from the palette. 
 * User can also add different colors to the palette as per his wish.
 * Also allows the user to set the default selected color.
+* User can also set the title of the dialog.
 
 # Dependency
 1. For using ColorPicker module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/colorpicker.har.
@@ -32,7 +33,7 @@ dependencies {
 ```
 
 # Usage
-The usage of this library is very simple. In the main ability slice, Create an object of `ColorPickerDialog`. Then initialize it by passing colors(that will be displayed on the palette), the default selected color, number of columns of the palette and the size of the swatch (ColorPickerPalette.SMALL_SWATCH for small size and ColorPickerPalette.LARGE_SWATCH for large size)
+The usage of this library is very simple. In the main ability slice, Create an object of `ColorPickerDialog`. Then initialize it by passing the titleId (for the dialog title), colors (that will be displayed on the palette), the default selected color, number of columns of the palette and the size of the swatch (ColorPickerPalette.SMALL_SWATCH for small size and ColorPickerPalette.LARGE_SWATCH for large size)
 
 The selected color from the palette can be retrieved using `setOnColorSelectedListener`.
 
