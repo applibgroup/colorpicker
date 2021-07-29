@@ -24,9 +24,9 @@ import com.fourmob.colorpicker.util.PreferencesHelper;
 import org.junit.Test;
 
 public class PreferencesHelperTest {
-    private final static String PREF_NAME = "Test";
-    private final static String KEY_VALUE = "check";
-    private final static RgbColor color = RgbPalette.YELLOW;
+    private static final String PREF_NAME = "Test";
+    private static final String KEY_VALUE = "check";
+    private static final RgbColor color = RgbPalette.YELLOW;
     private Context context;
     private PreferencesHelper helper;
 
