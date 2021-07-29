@@ -1,5 +1,5 @@
 # ColorPicker
-HarmonyOS library that allow us to pick a color from a palette.
+HarmonyOS library that allows us to pick a color from a color palette.
 
 ![ColorPicker_Sample](https://user-images.githubusercontent.com/77639268/127439758-fcbf330c-c1f8-44e5-a7c5-5b7d47b0e2c9.gif)
 
@@ -7,9 +7,9 @@ HarmonyOS library that allow us to pick a color from a palette.
 This library is inspired by [ColorPicker](https://github.com/flavienlaurent/colorpicker) library.
 
 # Features
-* This library allows us to select a color from the palette. 
-* We can also add different colors to the palette.
-* It also allows us to set the initial value of selected color.
+* This library allows user to select a color from the palette. 
+* User can also add different colors to the palette as per his wish.
+* Also allows the user to set the default selected color.
 
 # Dependency
 1. For using ColorPicker module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/colorpicker.har.
@@ -23,13 +23,13 @@ dependencies {
 2. For using ColorPicker in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
 ``` java
 dependencies {
-	implementation fileTree(dir: 'libs', include: ['*.har'])
-	testImplementation 'junit:junit:4.13'
+    implementation fileTree(dir: 'libs', include: ['*.har'])
+    testImplementation 'junit:junit:4.13'
 }
 ```
 
 # Usage
-The usage of this library is very simple. In the main ability slice, Create an object of `ColorPickerDialog`. Then initialize it by passing colors(that will be displayed on the palette), the selected color, number of columns of the palette and the size of the swatch (SMALL_SWATCH for small size and LARGE_SWATCH for large size)
+The usage of this library is very simple. In the main ability slice, Create an object of `ColorPickerDialog`. Then initialize it by passing colors(that will be displayed on the palette), the default selected color, number of columns of the palette and the size of the swatch (ColorPickerPalette.SMALL_SWATCH for small size and ColorPickerPalette.LARGE_SWATCH for large size)
 
 The selected color from the palette can be retrieved using `setOnColorSelectedListener`.
 
