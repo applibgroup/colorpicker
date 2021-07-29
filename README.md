@@ -1,3 +1,6 @@
+[![Build](https://github.com/applibgroup/colorpicker/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/colorpicker/actions/workflows/main.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_colorpicker&metric=alert_status)](https://sonarcloud.io/dashboard?id=applibgroup_colorpicker)
+
 # ColorPicker
 HarmonyOS library that allows us to pick a color from a color palette.
 
