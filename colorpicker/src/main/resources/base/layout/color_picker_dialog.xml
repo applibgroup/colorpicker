@@ -3,36 +3,29 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:background_element="$graphic:background_dialog"
     ohos:height="match_content"
-    ohos:width="match_content"
+    ohos:width="match_parent"
     ohos:orientation="vertical">
-
-    <Image
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:image_src="$media:line"
-        ohos:top_margin="-20fp"/>
 
     <ScrollView
         xmlns:ohos="http://schemas.huawei.com/res/ohos"
         ohos:height="match_content"
         ohos:width="match_content"
-        ohos:top_margin="-60fp"
         ohos:layout_alignment="center">
 
         <StackLayout
-            ohos:layout_alignment="horizontal_center"
+            ohos:layout_alignment="center"
             ohos:padding="28fp"
             ohos:height="match_content"
             ohos:width="match_content">
 
             <ProgressBar
-                ohos:layout_alignment="horizontal_center"
+                ohos:layout_alignment="center"
                 ohos:id="$+id:progress"
                 ohos:width="match_content"
                 ohos:height="match_content" />
 
             <com.fourmob.colorpicker.ColorPickerPalette
-                ohos:layout_alignment="horizontal_center"
+                ohos:layout_alignment="center"
                 ohos:id="$+id:color_picker"
                 ohos:visibility="visible"
                 ohos:width="match_content"
