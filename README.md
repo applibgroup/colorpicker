@@ -1,11 +1,15 @@
 # ColorPicker
 HarmonyOS library that allow us to pick a color from a palette.
 
+![ColorPicker_Sample](https://user-images.githubusercontent.com/77639268/127439758-fcbf330c-c1f8-44e5-a7c5-5b7d47b0e2c9.gif)
+
 # Source
 This library is inspired by [ColorPicker](https://github.com/flavienlaurent/colorpicker) library.
 
 # Features
-This library allows us to select a color from the palette. We can also add different colors to the palette.
+* This library allows us to select a color from the palette. 
+* We can also add different colors to the palette.
+* It also allows us to set the initial value of selected color.
 
 # Dependency
 1. For using ColorPicker module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/colorpicker.har.
@@ -25,11 +29,9 @@ dependencies {
 ```
 
 # Usage
-The usage of this library is very simple. In the main ability slice, we just have to create an object of `ColorPickerDialog`. Then we have to initialize it by passing colors(that we want to have in our palette), the selected color, number of columns of the palette and the size of the swatch (SMALL_SWATCH for small size and LARGE_SWATCH for large size)
+The usage of this library is very simple. In the main ability slice, Create an object of `ColorPickerDialog`. Then initialize it by passing colors(that will be displayed on the palette), the selected color, number of columns of the palette and the size of the swatch (SMALL_SWATCH for small size and LARGE_SWATCH for large size)
 
-Then we have to set the listener `setOnColorSelectedListener` which will display a toast message whenever a color swatch is selected from the palette.
-
-Finally we have to set the listener for the button on the homepage of our app that will display us the color picker dialog. 
+The selected color from the palette can be retrieved using `setOnColorSelectedListener`.
 
 ```java
 @Override
