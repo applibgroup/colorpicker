@@ -13,7 +13,7 @@
         ohos:background_element="#F9F7F7"
         ohos:layout_alignment="left"
         ohos:text="$string:mainability_HelloWorld"
-        ohos:text_size="15fp"
+        ohos:text_size="15vp"
         />
 
         <Button
@@ -22,12 +22,12 @@
             ohos:id="$+id:button"
             ohos:layout_alignment="center"
             ohos:text="$string:button_text"
-            ohos:top_margin="100fp"
+            ohos:top_margin="100vp"
             ohos:background_element="#A0a2a2"
-            ohos:text_size="25fp"
-            ohos:left_padding="10fp"
-            ohos:right_padding="10fp"
-            ohos:top_padding="5fp"
-            ohos:bottom_padding="5fp"/>
+            ohos:text_size="25vp"
+            ohos:left_padding="10vp"
+            ohos:right_padding="10vp"
+            ohos:top_padding="5vp"
+            ohos:bottom_padding="5vp"/>
 
 </DirectionalLayout>

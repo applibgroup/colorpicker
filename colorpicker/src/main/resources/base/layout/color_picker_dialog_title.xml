@@ -8,11 +8,18 @@
 
     <Text
         ohos:id="$+id:dialog_title"
-        ohos:text_size="30fp"
+        ohos:text_size="30vp"
         ohos:background_element="$graphic:background_dialog"
         ohos:text_color="#00FFFF"
         ohos:text_alignment="left"
         ohos:height="match_content"
         ohos:width="match_parent"/>
+
+    <Image
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:scale_mode="stretch"
+        ohos:top_margin="5vp"
+        ohos:image_src="$media:line"/>
 
 </DirectionalLayout>
