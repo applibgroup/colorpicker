@@ -31,6 +31,13 @@ dependencies {
     testImplementation 'junit:junit:4.13'
 }
 ```
+3. For using ColorPicker from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
+``` java
+dependencies {
+	implementation 'dev.applibgroup:colorpicker:1.0.0'
+	testCompile 'junit:junit:4.13'
+}
+```
 
 # Usage
 The usage of this library is very simple. In the main ability slice, Create an object of `ColorPickerDialog`. Then initialize it by passing the titleId (for the dialog title), colors (that will be displayed on the palette), the default selected color, number of columns of the palette and the size of the swatch (ColorPickerPalette.SMALL_SWATCH for small size and ColorPickerPalette.LARGE_SWATCH for large size)
