@@ -34,8 +34,8 @@ dependencies {
 3. For using ColorPicker from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
 ``` java
 dependencies {
-	implementation 'dev.applibgroup:colorpicker:1.0.0'
-	testCompile 'junit:junit:4.13'
+    implementation 'dev.applibgroup:colorpicker:1.0.0'
+    testCompile 'junit:junit:4.13'
 }
 ```
 
